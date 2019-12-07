@@ -19,6 +19,7 @@
     sudo apt update && sudo apt upgrade && sudo apt-get install update-manager-core
     ```
 
+### install docker
 - 初回
     ```
     sudo apt update
@@ -31,4 +32,32 @@
 - 2回目以降
     ```
     sudo cgroupfs-mount && sudo service docker start
+    ```
+### install docker compose
+- インストール
+    ```
+    sudo apt install docker-compose
+    ```
+
+### 動作確認
+- compose起動
+    ```
+    docker-compose up -d
+    ```
+- haskellコンテナに入る
+    ```
+    docker-compose exec haskell ghci
+    ```
+- main.hs実行
+    ```
+    :l main
+    main
+    ```
+- ghciを終わる
+    ```
+    :quit
+    ```
+- compose停止
+    ```
+    docker-compose down-v
     ```
