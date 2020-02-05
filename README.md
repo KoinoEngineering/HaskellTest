@@ -1,7 +1,10 @@
 # HaskelTest
-- Windows上でdocker環境で動かそうとしたが苦労したので、環境作ったときのことをただ書くだけのメモ
+ここの問題をボチボチ解いていく
+- https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
 
 ## Docker on Windows 10 Home with WSL
+- Windows上でdocker環境で動かそうとしたが苦労したので、環境作ったときのことをただ書くだけのメモ
+
 ### WSL2
 動かしてみたがdockerデーモンが動かなかったのでWSL2を入れる  
 - Windows Insider Program  
@@ -59,5 +62,5 @@
     ```
 - compose停止
     ```
-    docker-compose down-v
+    docker-compose down -v
     ```
