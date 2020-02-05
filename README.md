@@ -59,5 +59,5 @@
     ```
 - compose停止
     ```
-    docker-compose down-v
+    docker-compose down -v
     ```
