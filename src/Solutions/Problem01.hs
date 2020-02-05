@@ -1,5 +1,8 @@
 module Solutions.Problem01(problem01) where
-problem01 :: [a] -> a
-problem01 [] = error "Empty list"
-problem01 [x] = x
-problem01 (_:tail) = problem01 tail
+main :: [a] -> a
+main [] = error "Empty list"
+main [x] = x
+main (_:tail) = main tail
+
+problem01 :: IO()
+problem01 = putStrLn (show $ main [1..10])
