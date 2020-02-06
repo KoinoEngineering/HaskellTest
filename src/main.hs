@@ -11,7 +11,7 @@ main = do
         "",
         "Problem01",
         "λ> myLast [1,2,3,4]",
-        (show $ myLast [1..10]),
+        (show $ myLast [1,2,3,4]),
         "λ> myLast ['x','y','z']",
         (show $ myLast ['x','y','z'])
         ]
