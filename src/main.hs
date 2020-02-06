@@ -1,8 +1,10 @@
 module Main(
-   module Solutions.Problem01
+   module Solutions.Problem01,
+   module Solutions.Problem02
 ) where
 
 import Solutions.Problem01
+import Solutions.Problem02
 
 main :: IO()
 main = do
@@ -11,9 +13,15 @@ main = do
         "",
         "Problem01",
         "λ> myLast [1,2,3,4]",
-        (show $ myLast [1..10]),
+        (show $ myLast [1,2,3,4]),
         "λ> myLast ['x','y','z']",
-        (show $ myLast ['x','y','z'])
+        (show $ myLast ['x','y','z']),
+        "",
+        "Problem02",
+        "λ> myButLast [1,2,3,4]",
+        (show $ myButLast [1,2,3,4]),
+        "λ> myButLast ['a'..'z']",
+        (show $ myButLast ['a'..'z'])
         ]
 
 -- fizz :: Int -> String
