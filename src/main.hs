@@ -6,13 +6,15 @@ import Solutions.Problem01
 
 main :: IO()
 main = do
-    putStrLn "Main Loaded"
-    putStrLn ""
-    putStrLn "Problem01"
-    putStrLn "λ> myLast [1,2,3,4]"
-    putStrLn (show $ myLast [1..10])
-    putStrLn "λ> myLast ['x','y','z']"
-    putStrLn (show $ myLast ['x','y','z'])
+    mapM_ putStrLn [
+        "Main Loaded",
+        "",
+        "Problem01",
+        "λ> myLast [1,2,3,4]",
+        (show $ myLast [1..10]),
+        "λ> myLast ['x','y','z']",
+        (show $ myLast ['x','y','z'])
+        ]
 
 -- fizz :: Int -> String
 -- fizz n | n `mod` 15 == 0  = "FizzBuzz"
