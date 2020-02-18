@@ -2,11 +2,13 @@ module Main(
    module Solutions.Problem01,
    module Solutions.Problem02,
    module Solutions.Problem03,
+   module Solutions.Problem04,
 ) where
 
 import Solutions.Problem01
 import Solutions.Problem02
 import Solutions.Problem03
+import Solutions.Problem04
 
 main :: IO()
 main = do
@@ -33,6 +35,13 @@ main = do
         (show $ elementAt [1,2,3] 2),
         "λ> elementAt \"haskell\" 5",
         (show $ elementAt "haskell" 5),
+        "",
+        "----------------------------------------",
+        "Problem04",
+        "λ> myLength [123, 456, 789]",
+        (show $ myLength [123, 456, 789]),
+        "λ> myLength \"Hello, world!\"",
+        (show $ myLength "Hello, world!"),
         ""
         ]
 
