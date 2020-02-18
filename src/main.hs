@@ -3,12 +3,14 @@ module Main(
    module Solutions.Problem02,
    module Solutions.Problem03,
    module Solutions.Problem04,
+   module Solutions.Problem05,
 ) where
 
 import Solutions.Problem01
 import Solutions.Problem02
 import Solutions.Problem03
 import Solutions.Problem04
+import Solutions.Problem05
 
 main :: IO()
 main = do
@@ -42,6 +44,12 @@ main = do
         (show $ myLength [123, 456, 789]),
         "λ> myLength \"Hello, world!\"",
         (show $ myLength "Hello, world!"),
+        "----------------------------------------",
+        "Problem05",
+        "λ> myReverse \"A man, a plan, a canal, panama!\"",
+        (show $ myReverse "A man, a plan, a canal, panama!"),
+        "λ> myReverse [1,2,3,4]",
+        (show $ myReverse [1,2,3,4]),
         ""
         ]
 
